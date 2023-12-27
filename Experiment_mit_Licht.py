@@ -28,14 +28,14 @@ def game1():
     window1.title("Anleitung Spiel 1")
     
     # control lights
-    r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+    r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
         "on":True,
         "sat":254,
         "bri":124,
         "hue":43520
     })
 
-    r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+    r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
         "on":True,
         "sat":254,
         "bri":124,
@@ -74,11 +74,11 @@ def game1():
             writer = csv.writer(file)
             writer.writerow([story_entry,t_end5])
 
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
             "on":False,
         })
     
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
             "on":False,
         })
             
@@ -187,14 +187,14 @@ def game1():
         next1_button.config(text="Bestätigen.")
 
         # control lights
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
             "on":True,
             "sat":254,
             "bri":254,
             "hue":65280
         })
     
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
             "on":True,
             "sat":254,
             "bri":254,
@@ -299,14 +299,14 @@ def game1():
         next1_button.config(text="Bestätigen.")
 
         # control lights
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
             "on":True,
             "sat":254,
             "bri":254,
             "hue":43520
         })
     
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
             "on":True,
             "sat":254,
             "bri":254,
@@ -409,14 +409,14 @@ def game1():
         next1_button.config(text="Bestätigen")
         
         # control lights
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
             "on":True,
             "sat":254,
             "bri":124,
             "hue":65280
         })
 
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
             "on":True,
             "sat":254,
             "bri":124,
@@ -539,14 +539,14 @@ def game2():
     Bewertet wird die Lösung und die benötigte Zeit.")
  
     # control lights
-    r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+    r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
         "on":True,
         "sat":254,
         "bri":124,
         "hue":43520
     })
 
-    r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+    r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
         "on":True,
         "sat":254,
         "bri":124,
@@ -664,11 +664,11 @@ def game2():
             writer.writerow([story_entry,t_end17])
             
         # control lights
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
             "on":False,
         })
     
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
             "on":False,
         })
       
@@ -1003,14 +1003,14 @@ def game2():
         t_start14 = time.time()
         
         # control lights
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
             "on":True,
             "sat":254,
             "bri":254,
             "hue":65280
         })
 
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
             "on":True,
             "sat":254,
             "bri":254,
@@ -1346,14 +1346,14 @@ def game2():
         t_start11 = time.time()
         
         # control lights
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
             "on":True,
             "sat":254,
             "bri":254,
             "hue":43520
         })
 
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
             "on":True,
             "sat":254,
             "bri":254,
@@ -1690,14 +1690,14 @@ def game2():
         t_start8 = time.time()
         
         # control lights
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/11/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/11/state', json={
             "on":True,
             "sat":254,
             "bri":124,
             "hue":65280
         })
     
-        r = requests.put('http://169.254.13.57/api/mDwnfX625QPnjPRHSN0YPFrDdnM1vZs3T0TnDtFW/lights/1/state', json={
+        r = requests.put('http://$IPadress/api/$apikey/lights/1/state', json={
             "on":True,
             "sat":254,
             "bri":124,
